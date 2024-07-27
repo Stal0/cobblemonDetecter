@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "cobblemondetecter",
+  "version": "${version}",
+  "name": "CobblemonDetecter",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/cobblemondetecter/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.stalixo.cobblemondetecter.client.CobblemondetecterClient"
+    ],
+    "main": [
+      "com.stalixo.cobblemondetecter.Cobblemondetecter"
+    ]
+  },
+  "mixins": [
+    "cobblemondetecter.mixins.json",
+    {
+      "config": "cobblemondetecter.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
