@@ -16,10 +16,10 @@ public class ScreenKey {
 
     public static void KeyRegister() {
     toggleKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-            "key.nameinput.open",
+            "Filter List",
             InputUtil.Type.KEYSYM,
             GLFW.GLFW_KEY_N,
-            "category.nameinput"
+            "CobblemonDetecter"
     ));
     }
 

@@ -15,10 +15,10 @@ public class ConfigKey {
 
     public static void KeyRegister() {
         openConfigKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-            "key.config.open",
+            "Configuration",
             InputUtil.Type.KEYSYM,
             GLFW.GLFW_KEY_C,
-            "category.config"
+            "CobblemonDetecter"
     ));
     }
 

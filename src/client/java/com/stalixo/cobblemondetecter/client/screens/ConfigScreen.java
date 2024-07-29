@@ -31,7 +31,7 @@ public class ConfigScreen extends Screen {
         this.addSelectableChild(this.radiusField);
 
         //this.addDrawableChild(new ButtonWidget(this.saveButton, i, j + 80, 200, 20, Text.of("Save"), button -> this.saveConfig()));
-        this.saveButton = ButtonWidget.builder(Text.of("Actives"), button -> this.saveConfig())
+        this.saveButton = ButtonWidget.builder(Text.of("Submit"), button -> this.saveConfig())
                 .dimensions(i , j + 80, 100, 20)
                 .build();
         this.addDrawableChild(this.saveButton);
